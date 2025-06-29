@@ -44,8 +44,8 @@ export default function ChatContainerComponent({
         <div className={styles.messagesContainer}>
           {messages.length === 0 ? (
             <div className={styles.welcomeMessage}>
-              <h2>ברוכים הבאים ל-ChatPLG!</h2>
-              <p>התחל שיחה חדשה על ידי שליחת הודעה</p>
+              <h2 className="mixed-content">ברוכים הבאים ל-ChatPLG!</h2>
+              <p className="font-hebrew">התחל שיחה חדשה על ידי שליחת הודעה</p>
             </div>
           ) : (
             // render the messages

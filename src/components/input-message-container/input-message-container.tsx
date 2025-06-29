@@ -67,7 +67,7 @@ export default function InputMessageContainer({
           onChange={(e) => setInputValue(e.target.value)} 
           onKeyDown={handleKeyPress} 
           placeholder="הקלד הודעה..."
-          className={styles.messageInput} 
+          className={`${styles.messageInput} mixed-content`} 
           rows={1}  // the number of rows of the textarea
           disabled={isLoading} // the disabled state of the textarea
           dir="rtl" // the direction of the textarea

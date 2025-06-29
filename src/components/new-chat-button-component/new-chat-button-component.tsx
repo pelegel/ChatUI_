@@ -44,7 +44,7 @@ export default function NewChatButtonComponent({
         </svg>
         </div>
       </button>
-      <span className={styles.newChatIconTitle}>צור שיחה חדשה</span>
+      <span className={`${styles.newChatIconTitle} font-hebrew`}>צור שיחה חדשה</span>
     </div>
   );
 } 

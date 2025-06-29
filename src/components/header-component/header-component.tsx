@@ -25,7 +25,7 @@ export default function HeaderComponent({ isSidebarOpen, onCreateNewChat }: Head
       </div>
       
       <div className={`${styles.appName} ${isSidebarOpen ? styles.shifted : ''}`}>
-        <h1 onClick={onCreateNewChat} className={styles.clickable}>ChatPLG</h1>
+        <h1 onClick={onCreateNewChat} className={`${styles.clickable} font-english`}>ChatPLG</h1>
       </div>
       
     </header>

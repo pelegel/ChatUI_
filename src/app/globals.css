@@ -1,5 +1,5 @@
-/* Hebrew font support - must be at the top */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+/* Hebrew and English font support - must be at the top */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -76,7 +76,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Heebo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Sans Hebrew', 'Poppins', sans-serif;
   direction: rtl;
   height: 100%;
 }
@@ -84,6 +84,21 @@ body {
 body {
   color: var(--text-color);
   background: var(--bg-color);
+}
+
+/* Font classes for language-specific styling */
+.font-hebrew {
+  font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+.font-english {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Mixed content font handling */
+.mixed-content {
+  font-family: 'Noto Sans Hebrew', 'Poppins', sans-serif;
+  font-feature-settings: 'locl' 1;
 }
 
 /* Ensure Next.js wrapper takes full height */

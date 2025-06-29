@@ -21,6 +21,8 @@ export default function Home() {
   // holds the state of the loading and waiting for the AI response
   const [isLoading, setIsLoading] = useState(false);
 
+
+
   // Load conversations from localStorage on mount
   useEffect(() => {
     const savedConversations = localStorage.getItem('chatplg-conversations');

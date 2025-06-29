@@ -30,8 +30,8 @@ export default function PreviousChatListComponent({
     <div className={styles.conversationsList}>
       {conversations.length === 0 ? (
         <div className={styles.emptyState}>
-          <p>אין שיחות קודמות</p>
-          <p>התחל שיחה חדשה!</p>
+          <p className="font-hebrew">אין שיחות קודמות</p>
+          <p className="font-hebrew">התחל שיחה חדשה!</p>
         </div>
       ) : (
         // map over the conversations and render a PreviousChatItemComponent for each conversation

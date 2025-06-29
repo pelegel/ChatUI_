@@ -51,7 +51,7 @@ export default function SidebarComponent({
       {isOpen ? (
         <div className={styles.sidebarContent}>
           <div className={styles.sidebarHeader}>
-            <h2>שיחות קודמות</h2>
+            <h2 className="font-hebrew">שיחות קודמות</h2>
           </div>
           
           <PreviousChatListComponent
